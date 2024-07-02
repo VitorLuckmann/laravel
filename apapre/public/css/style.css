@@ -1,0 +1,350 @@
+/* CSS da aplicação - style.css */
+
+/* Estilo geral do body */
+body {
+   font-family: 'Roboto', sans-serif;
+   background-color: #f8f9fa;
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+/* Estilo do header e navbar */
+header {
+   background-color: #60d173;
+   padding: 1px 0;
+}
+
+.navbar {
+   max-width: 1200px;
+   margin: 0 auto;
+   padding: 0 20px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.navbar-brand {
+   margin-right: auto; /* Adiciona margem automática à direita para empurrar o resto dos itens */
+}
+
+.navbar-brand img {
+   width: 100px; /* Reduzindo o tamanho do logo */
+}
+
+.navbar-nav {
+   display: flex;
+   justify-content: center;
+   flex: 1;
+}
+
+.navbar-nav .nav-item {
+   margin-left: 15px;
+}
+
+.navbar-nav .nav-item .nav-link {
+   color: #ffffff;
+   font-weight: 500;
+   transition: color 0.3s;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+   color: #d4d4d4;
+}
+
+.navbar-nav .nav-item .nav-link.active {
+   color: #ffc107;
+   font-weight: 700;
+}
+
+/* Estilo do footer */
+/* style.css */
+
+footer {
+   position: fixed;
+   bottom: 0;
+   width: 100%;
+   background-color: #60d173;
+   padding: 10px 0;
+   text-align: center;
+   color: #333;
+   font-size: 14px;
+}
+
+footer p {
+   margin: 0;
+}
+
+/* Responsividade para o navbar */
+@media (max-width: 768px) {
+   .navbar {
+       padding: 0 10px;
+       flex-direction: column;
+   }
+
+   .navbar-brand img {
+       width: 80px; /* Tamanho do logo reduzido para telas menores */
+   }
+
+   .navbar-nav {
+       flex-direction: column;
+   }
+
+   .navbar-nav .nav-item {
+       margin-left: 0;
+       margin-right: 10px;
+       margin-bottom: 10px;
+   }
+}
+
+/* Estilo adicional para a página home */
+.card {
+    margin-bottom: 20px;
+}
+
+.card-img-top {
+    height: 300px; /* Altura fixa para as imagens */
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.card-text {
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+/* style.css */
+
+.adocao-container {
+   max-width: 800px;
+   margin: 0 auto;
+   padding: 20px;
+}
+
+h1 {
+   font-family: 'Roboto', sans-serif;
+   color: #333;
+   text-align: center;
+   margin-bottom: 30px;
+}
+
+.dog-card {
+   border: 1px solid #ccc;
+   border-radius: 8px;
+   overflow: hidden; /* Para garantir que a imagem não ultrapasse os limites do card */
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   display: flex;
+   margin-bottom: 20px;
+}
+
+.dog-img {
+   width: 200px; /* Ajuste conforme necessário */
+   height: auto;
+   object-fit: cover; /* Para garantir que a imagem se ajuste ao card */
+}
+
+.dog-card-body {
+   padding: 20px;
+}
+
+.dog-card-title {
+   font-size: 1.25rem;
+   font-weight: bold;
+}
+
+.dog-card-text {
+   font-size: 1rem;
+   color: #555;
+}
+
+.btn-primary {
+   background-color: #007bff;
+   border-color: #007bff;
+   color: #fff;
+   padding: 8px 16px;
+   border-radius: 4px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+   background-color: #0056b3;
+   border-color: #0056b3;
+}
+
+
+/* style.css */
+
+.cadastro-container {
+   max-width: 600px;
+   margin: 0 auto;
+   padding: 20px;
+}
+
+.cadastro-container h1 {
+   font-family: 'Roboto', sans-serif;
+   color: #333;
+   text-align: center;
+   margin-bottom: 30px;
+}
+
+.form-control {
+   width: 100%;
+   padding: 10px;
+   font-size: 16px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   margin-bottom: 15px;
+}
+
+.btn-primary {
+   background-color: #007bff;
+   border-color: #007bff;
+   color: #fff;
+   padding: 10px 20px;
+   border-radius: 4px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+   background-color: #0056b3;
+   border-color: #0056b3;
+}
+
+/* style.css */
+
+.login-container {
+   max-width: 600px;
+   margin: 0 auto;
+   padding: 20px;
+}
+
+.login-container h1 {
+   font-family: 'Roboto', sans-serif;
+   color: #333;
+   text-align: center;
+   margin-bottom: 30px;
+}
+
+.form-control {
+   width: 100%;
+   padding: 10px;
+   font-size: 16px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   margin-bottom: 15px;
+}
+
+.btn-primary {
+   background-color: #007bff;
+   border-color: #007bff;
+   color: #fff;
+   padding: 10px 20px;
+   border-radius: 4px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+   background-color: #0056b3;
+   border-color: #0056b3;
+}
+
+/* style.css */
+
+.event-form-container {
+   max-width: 600px;
+   margin: 0 auto;
+   padding: 20px;
+   border: 1px solid #ccc;
+   border-radius: 8px;
+   background-color: #fff;
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+   font-family: 'Roboto', sans-serif;
+   color: #333;
+   text-align: center;
+}
+
+.form-label {
+   font-weight: bold;
+}
+
+.form-control {
+   width: 100%;
+   padding: 10px;
+   font-size: 16px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   margin-bottom: 15px;
+}
+
+textarea.form-control {
+   resize: vertical; /* Permite redimensionamento vertical da textarea */
+}
+
+.btn-primary {
+   background-color: #007bff;
+   border-color: #007bff;
+   color: #fff;
+   padding: 10px 20px;
+   border-radius: 4px;
+   cursor: pointer;
+   transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+   background-color: #0056b3;
+   border-color: #0056b3;
+}
+
+/* CSS para o formulário */
+
+/* Estilo para o label */
+label {
+   display: block; /* Garante que cada label ocupe uma linha inteira */
+   margin-bottom: 10px; /* Espaçamento inferior entre os labels */
+}
+
+/* Estilo para o select */
+select {
+   width: 100%; /* Largura total do elemento */
+   padding: 10px; /* Espaçamento interno */
+   font-size: 16px; /* Tamanho da fonte */
+   border: 1px solid #ccc; /* Borda cinza */
+   border-radius: 4px; /* Bordas arredondadas */
+   margin-bottom: 15px; /* Espaçamento inferior */
+}
+
+/* Estilo para o input tipo file */
+input[type="file"] {
+   width: 100%; /* Largura total do elemento */
+   padding: 10px; /* Espaçamento interno */
+   font-size: 16px; /* Tamanho da fonte */
+   border: 1px solid #ccc; /* Borda cinza */
+   border-radius: 4px; /* Bordas arredondadas */
+   margin-bottom: 15px; /* Espaçamento inferior */
+}
+
+/* Estilo adicional para o botão de upload, se necessário */
+input[type="file"]::-webkit-file-upload-button {
+   background-color: #007bff; /* Cor de fundo do botão */
+   color: #fff; /* Cor do texto */
+   padding: 8px 16px; /* Espaçamento interno */
+   border: none; /* Sem borda */
+   border-radius: 4px; /* Bordas arredondadas */
+   cursor: pointer; /* Cursor tipo ponteiro */
+   transition: background-color 0.3s ease; /* Transição suave */
+}
+
+input[type="file"]::-webkit-file-upload-button:hover {
+   background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+}

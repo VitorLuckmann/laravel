@@ -13,6 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+use App\Http\Controllers\EventController;
+
+Route::get('/', [EventController::class,'index'] );
+Route::get('/events/create', [EventController::class,'create'] );
+Route::get('/events/doacao', [EventController::class,'doacao'] );
+Route::get('/events/cadastro', [EventController::class,'cadastro'] );
+Route::get('/events/entrar', [EventController::class,'entrar'] );
+Route::get('/events/home', [EventController::class,'home'] );
+Route::get('/events/cadastroevento', [EventController::class,'cadastroevento'] );
